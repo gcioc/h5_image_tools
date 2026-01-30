@@ -19,7 +19,7 @@ This library uses **PyTables**, which includes pre-compiled binaries with SZIP s
 - tables 
 - numpy
  
-### File Structure Compatibility
+## File Structure Compatibility
 
 This library works with HDF5 files that have:
 - Nested group structures (our use-case, `ImageData/timestamp/RawImages/RawImage_00000`)
@@ -38,10 +38,6 @@ This library works with HDF5 files that have:
 ### "Images have inconsistent shapes"
 - The library returns an object array if images have different dimensions
 - Access individual images: `images[0], images[1], ...`
-
-## License
-
-This library is provided as-is for scientific data processing.
 
 ## Version
 

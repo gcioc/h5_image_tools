@@ -1,6 +1,6 @@
 # H5 Image Tools
 
-A Python library for extracting images from HDF5 files, **specifically designed to handle SZIP compression**.
+A Python library for extracting images from HDF5 files, **specifically designed to handle SZIP compression**. It is designed to work for the use-case of our interest but it can be easily repurpoused for other uses.
 
 ## Why This Library?
 

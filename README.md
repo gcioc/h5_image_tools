@@ -35,6 +35,10 @@ This library works with HDF5 files that have:
 
 ## Troubleshooting
 
+### "ModuleNotFoundError: No module named 'h5_image_tools'"
+- Github downloads the directory as 'h5_image_tools-main'. It has to be named 'h5_image_tools' to work properly
+- Remove '-main' from the name of the directory after downloading it
+
 ### "Images have inconsistent shapes"
 - The library returns an object array if images have different dimensions
 - Access individual images: `images[0], images[1], ...`

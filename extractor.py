@@ -214,11 +214,4 @@ def extract_h5_images(file_path: Union[str, Path],
     extractor = H5ImageExtractor(file_path)
     extractor.scan_file()
     
-    if n_images is None:
-        print(f"\nNo specific count requested. Will extract all {extractor.total_images} images.")
-        user_input = input("Continue? (y/n): ").strip().lower()
-        if user_input != 'y':
-            print("Extraction cancelled.")
-            return np.array([])
-    
     return extractor.extract_images(n_images)
